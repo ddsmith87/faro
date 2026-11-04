@@ -78,7 +78,13 @@ android {
 
     buildTypes {
         release {
-            signingConfig = signingConfigs.getByName("release")
+            // Faro: sign with the real key when android/key.properties exists (CI writes it
+            // from repo secrets); otherwise fall back to the debug key so test builds still work.
+            signingConfig = if (keystorePropertiesFile.exists()) {
+                signingConfigs.getByName("release")
+            } else {
+                signingConfigs.getByName("debug")
+            }
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
