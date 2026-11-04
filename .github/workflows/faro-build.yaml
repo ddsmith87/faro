@@ -42,7 +42,7 @@ jobs:
           fi
       - name: Build APK
         run: flutter build apk --release
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: faro-android-apk
           path: build/app/outputs/flutter-apk/app-release.apk
@@ -63,7 +63,7 @@ jobs:
       - run: rm -f ./assets/vodozemac/.gitignore
       - name: Build web
         run: flutter build web --dart-define=FLUTTER_WEB_CANVASKIT_URL=canvaskit/ --release --base-href "/"
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: faro-web
           path: build/web
