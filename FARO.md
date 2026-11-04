@@ -13,13 +13,13 @@ Matrix protocol. Messages are end-to-end encrypted and live on our own server.
 | Icon | Lighthouse lamp + beam, night navy `#0E1A24` with beam amber `#F2A541` (`assets/logo/img`, `web/icons`) |
 | Colors | Fixed Faro grounds (navy dark / sand light) with the beam as accent: `lib/config/themes.dart` → `_faroScheme` |
 | Default theme | Dark (`lib/widgets/theme_builder.dart`) |
-| Server | Locked to `faro.example`; other servers disabled (`allowOtherHomeservers = false`, `presetHomeserver`) |
+| Server | Locked to `farochat.live`; other servers disabled (`allowOtherHomeservers = false`, `presetHomeserver`) |
 | Welcome text | "A private light for the people you love." |
 | CI | FluffyChat's publishing workflows removed; `faro-build.yaml` builds an Android APK and the web app |
 
 ## Placeholders to replace
 
-- `faro.example` → the real domain, in `lib/config/setting_keys.dart` and `lib/config/app_config.dart`
+- Domain is set to `farochat.live` in `lib/config/setting_keys.dart`
 - GitHub owner is set to `ddsmith87` in `lib/config/app_config.dart`
 
 ## Before a public release

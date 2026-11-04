@@ -53,13 +53,13 @@ enum AppSettings<T> {
   displayChatDetailsColumn('chat.fluffy.display_chat_details_column', false),
   // AppConfig-mirrored settings
   applicationName<String>('chat.fluffy.application_name', 'Faro'),
-  defaultHomeserver<String>('chat.fluffy.default_homeserver', 'faro.example'),
+  defaultHomeserver<String>('chat.fluffy.default_homeserver', 'farochat.live'),
   // colorSchemeSeed stored as ARGB int
   colorSchemeSeedInt<int>('chat.fluffy.color_scheme_seed', 0xFFF2A541),
   emojiSuggestionLocale<String>('emoji_suggestion_locale', ''),
   enableSoftLogout<bool>('chat.fluffy.enable_soft_logout', true),
   enableMatrixNativeOIDC<bool>('chat.fluffy.enable_matrix_native_oidc', true),
-  presetHomeserver<String>('chat.fluffy.preset_homeserver', 'faro.example'),
+  presetHomeserver<String>('chat.fluffy.preset_homeserver', 'farochat.live'),
   welcomeText<String>('chat.fluffy.welcome_text', 'A private light for the people you love.'),
   website<String>('chat.fluffy.website_url', 'https://fluffychat.im'),
   logoUrl<String>(

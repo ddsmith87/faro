@@ -62,7 +62,7 @@ abstract class AppConfig {
 
   static final Uri crashReportEndpoint = Uri(
     scheme: 'https',
-    host: 'crash.faro.example',
+    host: 'crash.farochat.live',
   );
 
   static const String mainIsolatePortName = 'main_isolate';
